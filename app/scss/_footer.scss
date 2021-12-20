@@ -1,0 +1,150 @@
+.footer {
+}
+.footer__container {
+	margin-top: 30px;
+	background: #eeeeee;
+	border: 2px solid #f5f4f4;
+	box-sizing: border-box;
+}
+.footer__block__logo {
+	margin-top: 40px;
+	padding: 0px 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer__logo {
+	display: flex;
+	align-items: center;
+}
+.footer__logo__img {
+	max-width: 38px;
+}
+.footer__logo__text {
+	margin-left: 14px;
+	a {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 36px;
+		letter-spacing: 0.28em;
+		color: $black;
+	}
+}
+.footer__social {
+	img {
+		margin-right: 30px;
+	}
+}
+.footer__block__links {
+	padding: 0 50px;
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	h6 {
+		a {
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 21px;
+			letter-spacing: 0.12em;
+
+			color: $black;
+		}
+	}
+	li {
+		a {
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 16px;
+			letter-spacing: 0.12em;
+			color: $black;
+		}
+	}
+}
+.footer__block__link_1 {
+	margin-top: 15px;
+}
+.footer__block__link_2 {
+	margin-top: 15px;
+}
+.footer__block__link_3 {
+	margin-top: 15px;
+}
+.footer__block__link_4 {
+	margin-top: 15px;
+	margin-right: 70px;
+}
+@media (max-width: 768px) {
+	.footer__block__links {
+		margin-top: 20px;
+	}
+	.footer__block__link_4 {
+		margin-right: 20px;
+	}
+
+	.footer__block__link_1 {
+		margin-top: 15px;
+		flex-basis: calc(100% / 2 - 5px);
+	}
+	.footer__block__link_2 {
+		margin-top: 15px;
+		flex-basis: calc(100% / 2 - 5px);
+	}
+	.footer__block__link_3 {
+		margin-top: 15px;
+		flex-basis: calc(100% / 3 - 5px);
+	}
+	.footer__block__link_4 {
+		margin-top: 15px;
+		margin-right: 0px;
+		flex-basis: calc(100% / 2 - 5px);
+	}
+}
+@media (max-width: 490px) {
+	.footer__social {
+		display: none;
+	}
+}
+
+.footer__line {
+	margin-top: 25px;
+	height: 2px;
+	width: 100%;
+	background: #c4c4c4;
+	opacity: 0.3;
+}
+.footer__subtext {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: space-between;
+	p {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 0.12em;
+	}
+}
+.footer__subtext__privacy {
+	display: flex;
+
+	a {
+		margin-right: 20px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 0.12em;
+		color: $black;
+	}
+}
+@media (max-width: 1179px) {
+	.footer__subtext__privacy {
+		margin-bottom: 10px;
+	}
+}
+@media (max-width: 768px) {
+	.footer__subtext {
+		padding: 0 10px;
+	}
+}

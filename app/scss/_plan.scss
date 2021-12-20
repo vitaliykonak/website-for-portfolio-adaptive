@@ -1,0 +1,86 @@
+.plan {
+	margin-top: 70px;
+	h2 {
+		text-align: center;
+		font-family: DM Serif Text;
+		font-size: 48px;
+		line-height: 56px;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+.plan__container {
+	display: flex;
+	:first-child {
+		margin-right: 50px;
+	}
+	:first-child {
+		background-image: url("/app/img/bgc_blue.png");
+	}
+}
+.plan__card {
+	width: 100%;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 575px;
+	height: 291px;
+	border: 4px solid #f5f0f0;
+	box-sizing: border-box;
+	border-radius: 6px;
+	background-image: url("/app/img/bgc_pink.png");
+}
+
+.plan__card__text {
+	padding-left: 40px;
+	font-family: DM Serif Text;
+	font-size: 36px;
+	line-height: 49px;
+}
+.plan__card__money {
+	font-size: 44px;
+	line-height: 57px;
+	letter-spacing: 0.12em;
+}
+.plan__card__button {
+	margin-top: 20px;
+	width: 200px;
+	height: 61px;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+	letter-spacing: 0.12em;
+	color: $white;
+	background: #ef8094;
+	border: 4px solid #ef8094;
+	box-sizing: border-box;
+	border-radius: 30px;
+	cursor: pointer;
+}
+.plan__subtext {
+	margin-top: 40px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 23px;
+	letter-spacing: 0.01em;
+}
+@media (max-width: 768px) {
+	.plan__card__text {
+		padding-left: 0px;
+	}
+	.plan__container {
+		:first-child {
+			margin-right: 0px;
+		}
+		padding: 0 10px;
+		flex-direction: column;
+		align-items: center;
+	}
+	.plan__subtext {
+		padding: 0px 10px;
+	}
+}
